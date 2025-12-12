@@ -1,0 +1,1 @@
+class Config:SECRET_KEY = os.environ.get('SECRET_KEY') or 'dev-secret-key-efere-demo'SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \'sqlite:///' + os.path.join(basedir, 'instance', 'efere_demo.sqlite3')SQLALCHEMY_TRACK_MODIFICATIONS = False
