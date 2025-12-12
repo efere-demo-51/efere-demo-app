@@ -1,0 +1,9 @@
+Contents:
+Flask==2.3.3
+Flask-Login==0.6.2
+Flask-Migrate==4.0.4
+Flask-SQLAlchemy==3.0.4
+gunicorn==20.1.0
+itsdangerous==2.1.2
+Werkzeug==2.2.3
+Jinja2==3.1.2
