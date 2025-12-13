@@ -1,0 +1,7 @@
+Filename: static/css/style.css
+Contents:
+body { font-family: Arial, sans-serif; background: #f7f7f7; color: #222; }
+.container { max-width: 800px; margin: 40px auto; background: white; padding: 20px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+table th, table td { text-align: left; padding: 8px; border-bottom: 1px solid #eee; }
+.flash.danger { color: red; 
