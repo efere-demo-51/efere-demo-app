@@ -1,0 +1,9 @@
+Filename: templates/contributions.html
+Contents:
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Contributions — Efere Demo</title><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body><div class="container"><h2>Contributions</h2><table><tr><th>Date</th><th>Member</th><th>Amount</th><th>Note</th></tr>{% for c in contribs %}<tr><td>{{ c.date.strftime('%Y-%m-%d') }}</td><td>{{ c.member.name }}</td><td>NGN {{ "{:,.2f}".format(c.amount) }}</td><td>{{ c.note }}</td></tr>{% endfor %}</table><p><a href="{{ url_for('dashboard') }}">Back to dashboard</a></p></div>
+</body>
+</html>
