@@ -1,0 +1,9 @@
+Filename: templates/dashboard.html
+Contents:
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Dashboard — Efere Demo</title><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body><div class="container"><h2>Dashboard</h2><p>Logged in as: {{ current_user.name }} ({{ current_user.phone }})</p><ul><li>Total contributions: {{ contrib_count }}</li><li>Sum of contributions: NGN {{ "{:,.2f}".format(total_contrib) }}</li><li>Balance (transactions): NGN {{ "{:,.2f}".format(balance) }}</li></ul><p><a href="{{ url_for('members') }}">Members</a> | <a href="{{ url_for('contributions') }}">Contributions</a> | <a href="{{ url_for('finances') }}">Finances</a> | <a href="{{ url_for('logout') }}">Logout</a></p></div>
+</body>
+</html>
