@@ -1,0 +1,8 @@
+Contents:
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Login — Efere Demo</title><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body><div class="container"><h2>Login</h2>{% with messages = get_flashed_messages(with_categories=true) %}{% if messages %}{% for category, message in messages %}<div class="flash {{ category }}">{{ message }}</div>{% endfor %}{% endif %}{% endwith %}<form method="post"><label>Phone</label><br><input name="phone" placeholder="+234..." required><br><label>Password</label><br><input name="password" type="password" required><br><br><button type="submit">Login</button></form><p>Demo Super Admin: +2348083884445 / EfereDemo!2025$</p></div>
+</body>
+</html>
