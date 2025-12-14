@@ -1,8 +1,7 @@
-Contents:
-Efere Demo App
-
-Simple Flask + SQLite demo for Efere cooperative. Includes seeded Super Admin and sample data. Intended for demo/development only.
-
-Run locally:python3 -m venv venvsource venv/bin/activateflask run
-
-Docker:docker build -t efere-demo .docker run -p 5000:5000 efere-demo
+requirements.txt
+flask
+flask-login
+flask_sqlalchemy
+gunicorn
+psycopg2-binary
+python-dotenv
